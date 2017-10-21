@@ -1,0 +1,5 @@
+name = Admin Theme Tweaks
+description = Style changes to admin theme
+core = 7.x
+package = Custom
+version 7.x-1.0

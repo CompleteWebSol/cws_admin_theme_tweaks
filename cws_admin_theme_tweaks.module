@@ -1,0 +1,17 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Matt Schreiber - Complete Web Solutions
+ * Date: 10/21/2017
+ * Time: 11:10 AM
+ */
+
+function cws_admin_theme_tweaks_preprocess_html(&$variables) {
+  // Add conditional stylesheets for admin pages on admin theme.
+  
+    // reference your current admin theme
+//    $theme_path = drupal_get_path('theme', 'seven');
+    // add new stylesheet
+    drupal_add_css(drupal_get_path('module', 'cws_admin_theme_tweaks') . '/css/tweaks.css', array('weight' => CSS_THEME));
+  
+}
